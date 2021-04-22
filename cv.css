@@ -1,0 +1,176 @@
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* ------------------------------------- */
+/* container CV */
+.container__curriculum {
+  width: 65%;
+  height: 65%;
+  margin-left: auto;
+  margin-right: auto;
+/*   border: 3px solid black;
+ */  position: relative;
+}
+
+/* ------------------------------------- */
+/* container HEADER*/
+
+.container__header {
+  /* border: 3px solid red; */
+  background-color: #8497B0;
+}
+
+.header--items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  border: 1px solid black;
+  width: 85%;
+}
+
+.header--items .name {
+  font-size: 35px;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.header--items .job {
+  font-size: 28px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------- */
+/* container BODY */
+
+.container__body {
+  border: 3px solid green;
+  display: flex;
+  flex-direction: row;
+}
+
+/* ------------------------------------- */
+/* container LEFT */
+
+.items__left {
+  /* border: 3px solid blueviolet; */
+  width: 250%;
+}
+
+.items--perfil {
+  /* border: 3px solid darkcyan; */
+}
+
+.title--perfil, .title--educacion, .title--exp{
+   padding-left: 20px;
+   font-size: 20px;
+}
+
+.paragraph--perfil{
+   font-size: 18px;
+   text-align: justify;
+   display: block;
+   padding: 0px 25px 25px 33px;
+}
+
+.items--educacion {
+  /* border: 3px solid gold; */
+  padding-bottom: 10px;
+}
+
+.paragraph--educacion{
+   font-size: 18px;
+   text-align: justify;
+   display: block;
+   padding-left: 25px;
+   padding-top: 0px;
+}
+
+.paragraph--school{
+   font-size: 15px;
+   text-align: justify;
+   display: block;
+   padding-left: 45px;
+   font-weight: bold;
+}
+
+.items--experiencia {
+  /* border: 3px solid purple; */
+}
+
+.exp1 {
+  /* border: 3px solid yellowgreen; */
+}
+
+.paragraph--date, .paragraph--state{
+   font-size: 15px;
+   font-weight: bold;
+   padding-left: 25px;
+}
+
+.paragraph--job{
+   font-size: 18px;
+   text-align: justify;
+   margin-bottom: 0;
+   display: block;
+   padding-left: 25px;
+}
+
+.paragraph--place{
+   margin-top: 0;
+   font-size: 18px;
+   text-align: justify;
+   margin-bottom: 0;
+   display: block;
+   padding: 0px 25px 0px 33px;
+}
+
+.exp1 > ul, .exp2 > ul{
+   padding-left: 10%;
+   font-size: 18px;
+   text-align: justify;
+}
+
+.exp2 {
+  /* border: 3px solid lawngreen; */
+  padding-top: 1em;
+}
+
+/* ------------------------------------- */
+/* container RIGTH */
+
+.items__rigth {
+  /* border: 3px solid blue; */
+}
+
+.items--img {
+  /* border: 3px solid maroon; */
+}
+
+img {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
+
+.items--contac {
+  /* border: 3px solid plum; */
+}
+
+.items--habilidades {
+  /* border: 3px solid aqua; */
+}
+
+.items--idiomas {
+  /* border: 3px solid firebrick; */
+}
