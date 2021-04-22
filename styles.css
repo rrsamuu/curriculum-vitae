@@ -8,8 +8,8 @@ html {
   height: 65%;
   margin-left: auto;
   margin-right: auto;
-/*   border: 3px solid black;
- */  position: relative;
+  border: 3px solid black;
+  position: relative;
 }
 
 /* ------------------------------------- */
@@ -51,7 +51,7 @@ html {
 /* container BODY */
 
 .container__body {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   display: flex;
   flex-direction: row;
 }
