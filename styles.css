@@ -32,15 +32,17 @@ html {
 }
 
 .header--items .name {
-  font-size: 35px;
-  display: block;
+  text-transform: uppercase;
+  font-size: 45px;
   margin-top: 25px;
   margin-bottom: 5px;
   color: white;
+  letter-spacing: .3em;
 }
 
 .header--items .job {
-  font-size: 28px;
+  letter-spacing: .1em;
+  font-size: 24px;
   margin-top: 5px;
   margin-bottom: 25px;
   color: white;
@@ -68,7 +70,8 @@ html {
   /* border: 3px solid darkcyan; */
 }
 
-.title--perfil, .title--educacion, .title--exp{
+.title--perfil, .title--educacion, .title--exp,
+.title--habilidades, .title--idiomas{
    padding-left: 20px;
    font-size: 20px;
 }
@@ -80,9 +83,11 @@ html {
    padding: 0px 25px 25px 33px;
 }
 
-.items--educacion {
+.school1, .school2 {
   /* border: 3px solid gold; */
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .paragraph--educacion{
@@ -155,22 +160,49 @@ html {
 }
 
 img {
-  width: 60%;
-  height: 60%;
+  width: 90%;
   display: block;
+  padding-top: 23px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .items--contac {
+  margin-top: 15px;
   /* border: 3px solid plum; */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
-.items--habilidades {
+.items--contac > a{
+  padding: 5px;
+}
+
+a > i {
+  padding-right: 10px;
+}
+
+.items--habilidades > ul{
   /* border: 3px solid aqua; */
+  padding-right: 10%;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.list--habilidades > li{
+  margin: 10px;
 }
 
 .items--idiomas {
   /* border: 3px solid firebrick; */
+  margin-top: 15px;
+}
+
+.items--idiomas > ul{
+  padding-right: 10%;
+  font-size: 17px;
+  text-align: justify;
+  margin-left: 10px;
 }
