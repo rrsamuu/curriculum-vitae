@@ -17,18 +17,21 @@ html {
 
 .container__header {
   /* border: 3px solid red; */
-  background-color: #8497B0;
+  background-color: #8497b0;
 }
 
 .header--items {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .line {
   border: 1px solid black;
+  background-color: black;
   width: 85%;
+  height: 2px;
 }
 
 .header--items .name {
@@ -37,16 +40,24 @@ html {
   margin-top: 25px;
   margin-bottom: 5px;
   color: white;
-  letter-spacing: .3em;
+  letter-spacing: 0.3em;
 }
 
 .header--items .job {
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-size: 24px;
   margin-top: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 0;
   color: white;
   text-transform: uppercase;
+}
+
+.header--items .pasante {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: white;
+  margin-top: 0px;
+  letter-spacing: 0.3em;
 }
 
 /* ------------------------------------- */
@@ -70,40 +81,44 @@ html {
   /* border: 3px solid darkcyan; */
 }
 
-.title--perfil, .title--educacion, .title--exp,
-.title--habilidades, .title--idiomas{
-   padding-left: 20px;
-   font-size: 20px;
+.title--perfil,
+.title--educacion,
+.title--exp,
+.title--habilidades,
+.title--idiomas {
+  padding-left: 20px;
+  font-size: 20px;
 }
 
-.paragraph--perfil{
-   font-size: 18px;
-   text-align: justify;
-   display: block;
-   padding: 0px 25px 25px 33px;
+.paragraph--perfil {
+  font-size: 18px;
+  text-align: justify;
+  display: block;
+  padding: 0px 25px 25px 33px;
 }
 
-.school1, .school2 {
+.school1,
+.school2 {
   /* border: 3px solid gold; */
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
 }
 
-.paragraph--educacion{
-   font-size: 18px;
-   text-align: justify;
-   display: block;
-   padding-left: 25px;
-   padding-top: 0px;
+.paragraph--educacion {
+  font-size: 18px;
+  text-align: justify;
+  display: block;
+  padding-left: 25px;
+  padding-top: 0px;
 }
 
-.paragraph--school{
-   font-size: 15px;
-   text-align: justify;
-   display: block;
-   padding-left: 45px;
-   font-weight: bold;
+.paragraph--school {
+  font-size: 15px;
+  text-align: justify;
+  display: block;
+  padding-left: 45px;
+  font-weight: bold;
 }
 
 .items--experiencia {
@@ -114,33 +129,35 @@ html {
   /* border: 3px solid yellowgreen; */
 }
 
-.paragraph--date, .paragraph--state{
-   font-size: 15px;
-   font-weight: bold;
-   padding-left: 25px;
+.paragraph--date,
+.paragraph--state {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 25px;
 }
 
-.paragraph--job{
-   font-size: 18px;
-   text-align: justify;
-   margin-bottom: 0;
-   display: block;
-   padding-left: 25px;
+.paragraph--job {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 0;
+  display: block;
+  padding-left: 25px;
 }
 
-.paragraph--place{
-   margin-top: 0;
-   font-size: 18px;
-   text-align: justify;
-   margin-bottom: 0;
-   display: block;
-   padding: 0px 25px 0px 33px;
+.paragraph--place {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 0;
+  display: block;
+  padding: 0px 25px 0px 33px;
 }
 
-.exp1 > ul, .exp2 > ul{
-   padding-left: 10%;
-   font-size: 18px;
-   text-align: justify;
+.exp1 > ul,
+.exp2 > ul {
+  padding-left: 10%;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .exp2 {
@@ -173,25 +190,27 @@ img {
   /* border: 3px solid plum; */
   display: flex;
   flex-direction: column;
-  align-items: left;
+  /* align-items: left; */
 }
 
-.items--contac > a{
+.items--contac > a {
   padding: 5px;
+  text-decoration: none;
+  color: black;
 }
 
-a > i {
+.items--contac a > i {
   padding-right: 10px;
 }
 
-.items--habilidades > ul{
+.items--habilidades > ul {
   /* border: 3px solid aqua; */
   padding-right: 10%;
   font-size: 17px;
   text-align: justify;
 }
 
-.list--habilidades > li{
+.list--habilidades > li {
   margin: 10px;
 }
 
@@ -200,7 +219,7 @@ a > i {
   margin-top: 15px;
 }
 
-.items--idiomas > ul{
+.items--idiomas > ul {
   padding-right: 10%;
   font-size: 17px;
   text-align: justify;
@@ -208,9 +227,111 @@ a > i {
 }
 
 /* -------------- */
-@media screen and (min-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  html {
+    /* background-color: royalblue; */
+  }
+
   .container__curriculum {
-    width: 90%;
-    height: 100%;
+    width: 95%;
+  }
+
+  .header--items .name {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: white;
+    letter-spacing: 0.3em;
+  }
+
+  .header--items .job {
+    /* letter-spacing: .1em; */
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .header--items .pasante {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white;
+    margin-top: 0px;
+    letter-spacing: 0.3em;
+  }
+
+  .container__body {
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .items__left {
+    /* border: 3px solid blueviolet; */
+    width: auto;
+  }
+
+  .paragraph--educacion {
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 25px;
+    padding-top: 0px;
+  }
+
+  .info {
+    padding-right: 25px;
+  }
+
+  .paragraph--school {
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 45px;
+    font-weight: bold;
+  }
+
+  .paragraph--job {
+    font-size: 18px;
+    /* text-align: justify; */
+    margin-bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .paragraph--place {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 0;
+    display: block;
+    padding: 0px 25px 0px 33px;
+  }
+
+  .exp1 > ul,
+  .exp2 > ul {
+    padding-left: 10%;
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 25px;
+  }
+
+  img {
+    width: 50%;
+    display: block;
+    padding-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+
+  .items--habilidades > ul {
+    padding-right: 20px;
+    font-size: 17px;
+    text-align: justify;
+  }
+
+  .items--contac {
+    padding-left: 20px;
   }
 }
