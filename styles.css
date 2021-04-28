@@ -322,7 +322,7 @@ img {
   justify-content: center;
   }
 
-  .line_two{
+  .line_container .line_two{
     border-top: 3px solid black;
     width: 85%;
   }
